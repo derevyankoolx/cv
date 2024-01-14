@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 *,
@@ -56,4 +57,63 @@ button,
 textarea,
 select {
     font: inherit;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.header {
+    background: url('../images/header.jpg'), no-repeat, center;
+    min-height: 415px;
+    margin-bottom: 40px;
+}
+
+.header__inner {
+    padding-top: 150px;
+}
+.header__subtitle, .header__title, .header__jobtitle {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+.header__subtitle {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    display: block;
+    width: 80px;
+    padding: 20px;
+    margin: 0 auto 20px;
+}
+.header__title {
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+.section__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.section__info {
+    border: 1px solid #aaa;
+    padding: 30px;
+}
+.about__descr {
+    border: 1px solid #aaa;
+}
+.section__info img {
+    position: relative;
+    padding-bottom: 20px;
+}
+.section__icon:before {
+    content: '';
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    width: 100px;
+    height: 10px;
+    background: #000;
+    top: 0;
+    left: 0;
 }
