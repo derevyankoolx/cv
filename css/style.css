@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     font-family: sans-serif;
+    color: #828282;
 }
 
 *,
@@ -66,11 +67,11 @@ select {
 .header {
     background: url('../images/header.jpg'), no-repeat, center;
     min-height: 415px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .header__inner {
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .header__subtitle, .header__title, .header__jobtitle {
     text-align: center;
@@ -98,22 +99,59 @@ select {
 .section__info {
     border: 1px solid #aaa;
     padding: 30px;
+    max-width: 750px;
 }
-.about__descr {
-    border: 1px solid #aaa;
+
+.section__icon {
+    margin-bottom: 30px;
 }
-.section__info img {
+.section__title {
     position: relative;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: normal;
 }
-.section__icon:before {
+
+.section__title:before {
     content: '';
     display: block;
     position: absolute;
-    margin-top: 10px;
-    width: 100px;
-    height: 10px;
+    width: 24px;
+    height: 1px;
     background: #000;
-    top: 0;
+    top: -15px;
     left: 0;
+}
+.section__text {
+    margin-bottom: 10px;
+    line-height: 23px;
+}
+.section__descr {
+    background: url('../images/descr__bg.png');
+    padding: 30px;
+    border: 1px solid #aaa;
+}
+.section__img {
+    border-radius: 50%;
+}
+.about__list-item {
+    margin-bottom: 8px;
+}
+.social__list-img, .section__btn img {
+    width: 40px;
+    height: 40px;
+}
+.social__list {
+    display: flex;
+}
+.social__list-item {
+    margin-right: 10px;
+}
+.social__list-item:last-child {
+    margin-right: 0;
+}
+.section__box {
+    display: flex;
+}
+.section__btn {
+    display: block;
 }
