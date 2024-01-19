@@ -1,7 +1,11 @@
 'use strict'
 
-const shareBtn = document.getElementById("shareBtn");
+const share = document.querySelector('.share');
 
-shareBtn.addEventListener("click", () => {
-  shareBtn.classList.toggle("open");
-});
+setTimeout(() => {
+  share.classList.add("hover");
+}, 1000);
+
+setTimeout(() => {
+  share.classList.remove("hover");
+}, 3000);
