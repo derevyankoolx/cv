@@ -15,8 +15,8 @@ $('.education__slider').slick({
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/arrow-left.svg"></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/arrow-right.svg"></button>',
     slidesToShow: 1,
-    slidesToScroll: 1
-  
+    slidesToScroll: 1,
+    speed: 200
   });
 
   $('.education__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {

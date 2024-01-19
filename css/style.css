@@ -60,6 +60,9 @@ textarea,
 select {
     font: inherit;
 }
+section {
+    margin-bottom: 60px;
+}
 
 .container {
     max-width: 1200px;
@@ -192,9 +195,6 @@ select {
     border-radius: 50%;
 }
 
-.about {
-    margin-bottom: 50px;
-}
 
 .section__descr .about__list {
     margin-bottom: 60px;
@@ -516,9 +516,7 @@ select {
     z-index: -1;
     transition: transform .3s ease-out;
 }
-.education-skills {
-    margin-bottom: 60px;
-}
+
 
 .slider__item-title {
     margin-bottom: 20px;
@@ -526,15 +524,16 @@ select {
 .slider__item-descr {
     margin-bottom: 10px;
 }
-.slider__item-list {
+.slider__item{
     padding-top: 10px;
 }
+
 .slider__item-link {
     border-bottom: 1px solid #101010;
 }
 .slick-arrow {
     position: absolute;
-    bottom: -20px;
+    bottom: -40px;
     right: 0;
     background: transparent;
     border: none;
@@ -569,4 +568,54 @@ select {
 }
 .diploma__descr {
     font-size: 28px;
+}
+
+.experience__title {
+    margin-bottom: 20px;
+}
+
+.section__list-item {
+    position: relative;
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+.section__list-item:last-child {
+    margin-bottom: 0;
+}
+.section__list-item:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border: 1px solid #444444;
+    top: 10px;
+    left: -43px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.section__list-item:after {
+    position: absolute;
+    content: '';
+    top: 3px;
+    left: -50px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    z-index: 1;
+}
+.section__item-title {
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.section__item-subtitle {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.section__item-descr {
+    font-size: 15px;
+}
+.section__list-item {
 }
