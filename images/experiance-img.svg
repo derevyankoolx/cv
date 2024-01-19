@@ -1,7 +1,7 @@
 <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+	 width="60px" height="60px" viewBox="0 0 32 32" xml:space="preserve">
 <style type="text/css">
-	.blueprint_een{fill:#111918;}
+	.blueprint_een{fill:#101010;}
 </style>
 <path class="blueprint_een" d="M29,5H3v18h26V5z M28,22H4V6h24V22z M31.01,2H0.99C0.443,2,0,2.443,0,2.99v22.02
 	C0,25.557,0.443,26,0.99,26H11v2H9.99C9.443,28,9,28.443,9,28.99v0.02C9,29.557,9.443,30,9.99,30h12.02
