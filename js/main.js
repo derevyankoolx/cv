@@ -10,7 +10,7 @@ setTimeout(() => {
   share.classList.remove("hover");
 }, 3000);
 
-$('.education__slider').slick({
+$('.education__slider, .testimonials__slider').slick({
     infinite: false,
     prevArrow: '<button class="slick-arrow slick-prev"><img src="images/arrow-left.svg"></button>',
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/arrow-right.svg"></button>',
@@ -19,7 +19,7 @@ $('.education__slider').slick({
     speed: 200
   });
 
-  $('.education__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+  $('.education__slider, .testimonials__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
     if (nextSlide === 0) {
         $('.slick-prev').hide();
     } else {
@@ -33,7 +33,7 @@ $('.education__slider').slick({
     }
 });
 
-$('.education__slider').on('setPosition', function(event, slick) {
+$('.education__slider, .testimonials__slider').on('setPosition', function(event, slick) {
     if (slick.currentSlide === 0) {
         $('.slick-prev').hide();
     } else {
