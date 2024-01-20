@@ -46,3 +46,20 @@ $('.education__slider, .testimonials__slider').on('setPosition', function(event,
         $('.slick-next').show();
     }
 });
+
+
+
+window.onload = function() {
+    var swiper = new Swiper('.blog-slider', {
+      spaceBetween: 30,
+      effect: 'fade',
+      loop: true,
+      mousewheel: {
+        invert: false,
+      },
+      pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+      }
+    });
+  };
