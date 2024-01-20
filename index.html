@@ -461,6 +461,7 @@
                 <div class="education-icon"></div>
             </div>
         </section>
+
         <section class="experience">
             <div class="container">
                 <div class="section__inner">
@@ -604,13 +605,47 @@
                 </div>
             </div>
         </section>
+        <section class="fw-slider">
+            <img class="fw-slider__item" src="images/html-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/github-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/css-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/jquery-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/wordpress-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/react-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/sass-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/code-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/svg-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/photoshop-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/npm-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/figma-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/chromeDev-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/bootstrap-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/web-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/html-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/github-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/css-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/jquery-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/wordpress-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/code-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/react-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/sass-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/svg-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/photoshop-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/npm-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/figma-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/chromeDev-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/bootstrap-item.svg" alt="slider-item">
+            <img class="fw-slider__item" src="images/web-item.svg" alt="slider-item">
+        </section>
         <section class="portfolio">
             <div class="container">
                 <div class="section__inner">
                     <div class="section__portfolio">
                         <img class="section__icon" src="images/portfolio-img.svg" alt="icon">
                         <h2 class="section__title">Портфоліо</h2>
-                        <marquee><a href="#">Ви можете перейти за данним посиланням та ознайомитись з моїм github профілем</a></marquee>
+                        <a class="portfolio__git-btn borders" href="https://github.com/derevyankoolx" target="_blank" class=" portfolio__git">
+                            <span>Профіль github</span>
+                    </a>
                         <div class="blog-slider">
                             <div class="blog-slider__wrp swiper-wrapper">
                                 <div class="blog-slider__item swiper-slide">
@@ -809,10 +844,56 @@
                 </div>
             </div>
         </section>
+        <section class="education-skills">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="section__descr">
+                        <img class="section__icon" src="images/contact-img.svg" alt="icon">
+                        <h2 class="section__title">Контаки</h2>
+                        <ul class="about__list">
+                            <li class="about__list-item">Телефон: <a class="phone"
+                                    href="tel:+380669937460">+380669937460</a></li>
+                            <li class="about__list-item">Пошта: <a class="mail"
+                                    href="derevyankoolx@gmail.com">derevyankoolx@gmail.com</a></li>
+                        </ul>
+
+                        <div class="section__box">
+                            <div class="share">
+                                <span>Соціальні мережі</span>
+                                <nav>
+                                    <a href="https://t.me/dereviankoolx" target="_blank"><i
+                                            class="fa fa-telegram"></i></a>
+                                    <a href="https://www.linkedin.com/in/dereviankoolx/"><i class="fa fa-linkedin"
+                                            target="_blank"></i></a>
+                                    <a href="https://www.instagram.com/derevianko.olx/"><i class="fa fa-instagram"
+                                            target="_blank"></i></a>
+                                    <a href="https://github.com/derevyankoolx"><i class="fa fa-github"
+                                            target="_blank"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section__info">
+                        <img class="section__icon" src="images/mail-img.svg" alt="icon">
+                        <h2 class="section__title">Зв'язок зі мною</h2>
+                        <div class="section__item">
+                            <form action="sender.php" method="post">
+                                <input type="text" class="name" name="name" placeholder="Имя" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <textarea name="text" id="" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                                <button type="button" class="send-form">Отправить форму</button>
+                                <div class="status"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://kit.fontawesome.com/0be52e40d2.js" crossorigin="anonymous"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>

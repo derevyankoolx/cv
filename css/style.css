@@ -155,6 +155,7 @@ section {
     border: 1px solid #aaa;
     padding: 30px;
     max-width: 750px;
+    width: 100%;
 }
 
 .section__icon {
@@ -190,6 +191,7 @@ section {
     padding: 30px;
     border: 1px solid #aaa;
     max-width: 362px;
+    width: 100%;
 }
 
 .section__img {
@@ -683,12 +685,120 @@ section {
     padding: 30px;
   }
 
+.portfolio__git {
+    display: flex;
+    justify-content: right;
+}
+.btn-liquid {
+	display: inline-block;
+	position: relative;
+	width: 240px;
+	height: 60px;
+
+	border-radius: 27px;
+
+	color: #fff;
+	font: 700 14px/60px "Droid Sans", sans-serif;
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.portfolio__git-btn {
+    display: inline-flex;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 10;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+}
+
+.portfolio__git-btn.borders {
+    color: #4a4a4a;
+    transition: color 0.4s ease-in-out;
+  }
+  .portfolio__git-btn.borders::before,
+  .portfolio__git-btn.borders::after,
+  .portfolio__git-btn.borders span::before,
+  .portfolio__git-btn.borders span::after {
+    position: absolute;
+    content: '';
+    background: #999;
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolio__git-btn.borders::before,
+  .portfolio__git-btn.borders::after {
+    width: 2px;
+  }
+  .portfolio__git-btn.borders::before {
+    top: 0;
+    left: 0;
+    bottom: 70%;
+  }
+  .portfolio__git-btn.borders::after {
+    bottom: 0;
+    right: 0;
+    top: 70%;
+  }
+  .portfolio__git-btn.borders span::before,
+  .portfolio__git-btn.borders span::after {
+    height: 2px;
+    transition: all 0.4s ease-in-out;
+  }
+  .portfolio__git-btn.borders span::before {
+    top: 0;
+    left: 0;
+    right: 90%;
+  }
+  .portfolio__git-btn.borders span::after {
+    bottom: 0;
+    right: 0;
+    left: 90%;
+  }
+  .portfolio__git-btn.borders:hover {
+    color: #333;
+    transition: color 0.4s ease-in-out;
+  }
+  .portfolio__git-btn.borders:hover::before,
+  .portfolio__git-btn.borders:hover::after,
+  .portfolio__git-btn.borders:hover span::before,
+  .portfolio__git-btn.borders:hover span::after {
+    transition: all 0.4s ease-in-out;
+    background: #333;
+  }
+  .portfolio__git-btn.borders:hover::before {
+    bottom: 0;
+  }
+  .portfolio__git-btn.borders:hover::after {
+    top: 0;
+  }
+  .portfolio__git-btn.borders:hover span::before {
+    right: 0;
+  }
+  .portfolio__git-btn.borders:hover span::after {
+    left: 0;
+  }
+  .portfolio__git-btn.borders:active {
+    text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+  }
+  .portfolio__git-btn.borders:active::before,
+  .portfolio__git-btn.borders:active::after,
+  .portfolio__git-btn.borders:active span::before,
+  .portfolio__git-btn.borders:active span::after {
+    transform: scale(0.85);
+  }
 
   .blog-slider {
     width: 100%;
     position: relative;
     max-width: 1000px;
-    margin: 40px 0 0 auto;
+    margin: 20px 0 0 auto;
     background: #fff;
     padding: 25px;
     border-radius: 25px;
@@ -931,3 +1041,49 @@ section {
       width: 30px;
     }
   }
+
+
+  .fw-slider img{
+    width: 80px
+  }
+  .fw-slider__item {
+    margin-right: 20px;
+  }
+
+  form {
+    border: 1px solid #c3c3c3;
+    padding: 15px;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+form input.error{
+    border-color:red;
+}
+
+form textarea {
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    line-height: 18px;
+}
+
+form button {
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
