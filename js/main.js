@@ -16,7 +16,18 @@ $('.education__slider, .testimonials__slider').slick({
     nextArrow: '<button class="slick-arrow slick-next"><img src="images/arrow-right.svg"></button>',
     slidesToShow: 1,
     slidesToScroll: 1,
-    speed: 200
+    speed: 200,
+    responsive: [
+        {
+          breakpoint: 749,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: false,
+            dots: false
+          }
+        },
+    ]
 });
 
 $('.education__slider, .testimonials__slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
@@ -81,3 +92,15 @@ jQuery('.fw-slider').slick({
     focusOnSelect: true
 });
 
+(function() {
+    $('.skills-prog li').find('.skills-bar').each(function(i) {
+      $(this).find('.bar').delay(i * 150).animate({
+        width: $(this).parents().attr('data-percent') + '%'
+      }, 1000, 'linear', function() {
+        return $(this).css({
+          'transition-duration': '.5s'
+        });
+      });
+    });
+    
+  }).call(this);
