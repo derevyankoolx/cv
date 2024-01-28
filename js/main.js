@@ -19,13 +19,13 @@ $('.education__slider, .testimonials__slider').slick({
     speed: 200,
     responsive: [
         {
-          breakpoint: 749,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            dots: false
-          }
+            breakpoint: 749,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: false,
+                dots: false
+            }
         },
     ]
 });
@@ -61,12 +61,16 @@ $('.education__slider, .testimonials__slider').on('setPosition', function (event
 
 
 window.onload = function () {
-    var swiper = new Swiper('.blog-slider', {
+    const swiper = new Swiper('.blog-slider', {
         spaceBetween: 30,
         effect: 'fade',
         loop: true,
         mousewheel: {
             invert: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
         },
         pagination: {
             el: '.blog-slider__pagination',
@@ -92,15 +96,15 @@ jQuery('.fw-slider').slick({
     focusOnSelect: true
 });
 
-(function() {
-    $('.skills-prog li').find('.skills-bar').each(function(i) {
-      $(this).find('.bar').delay(i * 150).animate({
-        width: $(this).parents().attr('data-percent') + '%'
-      }, 1000, 'linear', function() {
-        return $(this).css({
-          'transition-duration': '.5s'
+(function () {
+    $('.skills-prog li').find('.skills-bar').each(function (i) {
+        $(this).find('.bar').delay(i * 150).animate({
+            width: $(this).parents().attr('data-percent') + '%'
+        }, 1000, 'linear', function () {
+            return $(this).css({
+                'transition-duration': '.5s'
+            });
         });
-      });
     });
-    
-  }).call(this);
+
+}).call(this);
